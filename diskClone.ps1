@@ -1,3 +1,6 @@
+#Please read the comments.You may need to change the snapshot prefix to avoid any of your existing snapshots
+#getting over written.
+#You will also need to remove the existing snapshots from source and target subscriptions on the second runs
 param (
     [string] $sourceSubscriptionId = "",
     [string] $sourceResourceGroupName = "",
