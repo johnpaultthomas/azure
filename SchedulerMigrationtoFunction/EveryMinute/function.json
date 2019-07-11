@@ -1,0 +1,17 @@
+{
+  "bindings": [
+    {
+      "name": "Timer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 * * * * *"
+    },
+    {
+      "type": "blob",
+      "name": "inputBlob",
+      "path": "schedulers/schedulers_1minute.csv",
+      "connection": "AzureWebJobsStorage",
+      "direction": "in"
+    }
+  ]
+}
