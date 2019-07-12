@@ -9,7 +9,7 @@
     {
       "type": "blob",
       "name": "inputBlob",
-      "path": "schedulers/schedulers_1minute.csv",
+      "path": "schedulers/schedulers_http.csv",
       "connection": "AzureWebJobsStorage",
       "direction": "in"
     }
