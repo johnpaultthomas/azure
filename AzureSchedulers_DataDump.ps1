@@ -31,7 +31,7 @@ $k=0
       
                 else 
                 {
-                    ($k.tostring() + "," + $jcname + "," + $i.JobName.ToString() + "," + $i.JobAction.RequestMethod.ToString() + "," + $i.JobAction.URI.ToString() + "," + $i.Recurrence.ToString())  >> schedulers_http.csv
+                    ($jcname + "," + $i.JobName.ToString() + "," + $i.JobAction.URI.ToString() + "," + $i.JobAction.RequestMethod.ToString() + ","+ $i.Recurrence.ToString())  >> schedulers_http.csv
                 }
         }
         Catch
