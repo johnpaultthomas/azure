@@ -18,7 +18,7 @@ foreach ($job in $jobs){
         $jobName       = $job.split(",")[1]
         $uri           = $job.split(",")[2]
         $requestMethod = $job.split(",")[3]
-        $interval      = $interval= [int] ($job.split(",")[4]).replace("Every","").replace("Minutes","").Trim()
+        $interval      = [int] ($job.split(",")[4]).replace("Every","").replace("Minutes","").Trim()
         if(((New-TimeSpan -Start $originalUTCTime -End $currentUTCtime).Minutes / $interval ) -is [int])
         {
             $response= Invoke-WebRequest $uri -Method $requestMethod   
